@@ -1,0 +1,42 @@
+/* add custom styles */
+.paper{
+  background-image: url('../img/money-gif.gif')
+}
+
+.rock{
+  background-image: url('../img/therock.gif')
+}
+
+.scissors{
+  background-image: url('../img/sizz.gif')
+}
+
+.rock, .paper, .scissors{
+  height: 200px;
+  background-image: contain;
+}
+
+.player{
+  color: red;
+}
+
+.cpu{
+  color: blue;
+}
+
+.win{
+  background-image: url('../img/jgold.gif')
+}
+
+.lose{
+  background-image: url('../img/shit.gif')
+}
+
+.win, .lose {
+  height:300px;
+  background-size:cover;
+}
+
+.margin {
+  margin-top: 20px;
+}
