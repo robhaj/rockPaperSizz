@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" ng-app='controllerApp'>
-  <head>
-    <meta charset="utf-8">
-    <title>Untitled</title>
-
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Rock-paper-scissors">Rock, Paper, Sizz</a>
+<head>
+  <meta charset="utf-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Rock-paper-scissors">Rock, Paper, Sizz</a>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Rock, Paper, Sizz</h1>
+      <p></p>
+      <p><a class="btn btn-primary btn-lg" href= "https://en.wikipedia.org/wiki/Rock-paper-scissors" role="button">Learn more &raquo;</a></p>
     </div>
   </div>
-</nav>
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-  <div class="container">
-    <h1>Rock, Paper, Sizz</h1>
-    <p></p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-  </div>
-</div>
-    <!-- sample angular code -->
-    <!-- <div class="container">
-      <div im
-      <div ng-controller="myController">
-        <p>{{ greeting }}</p>
-      </div>
-    </div> -->
-
-    <div class = 'container text-center' ng-controller = 'GameController'>
-      <div class="row">
+  <div class = 'container text-center' ng-controller = 'GameController'>
+    <div class="row">
       <div ng-show="playerScore >= 10" class="col-xs-offset-3 col-xs-6 win"></div>
       <div ng-show="cpuScore >= 10" class="col-xs-offset-3 col-xs-6 lose"></div>
     </div>
@@ -49,32 +37,26 @@
         <h1 ng-show = 'cpu === "rock"' class = 'cpu'>CPU</h1>
         <h1 ng-show = 'player === "rock"' class = 'player'>Player</h1>
       </div>
-
       <div class = 'paper col-xs-4' ng-click = 'paper()'>
         <h1 ng-show = 'cpu === "paper"' class = 'cpu'>CPU</h1>
         <h1 ng-show = 'player === "paper"' class = 'player'>Player</h1>
       </div>
-
       <div class = 'scissors col-xs-4' ng-click = 'scissors()'>
         <h1 ng-show = 'cpu === "scissors"' class = 'cpu'>CPU</h1>
         <h1 ng-show = 'player === "scissors"' class = 'player'>Player</h1>
       </div>
-
       <div class = 'col-xs-offset-4 col-xs-4 score'>
         <h1>Score</h1>
         <h3 class = 'player'>Player : {{playerScore}} </h3>
         <h3 class = 'cpu'>CPU : {{cpuScore}} </h3>
       </div>
     </div>
-    </div>
-<iframe width="0" height="0" src="https://www.youtube.com/embed/P65yE_EXLd8?autoplay=1"></iframe>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+  </div>
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/P65yE_EXLd8?autoplay=1"></iframe>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
